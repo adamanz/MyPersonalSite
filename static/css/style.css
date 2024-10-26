@@ -78,6 +78,25 @@ section {
     transform: translateY(-5px);
 }
 
+/* Recognition Carousel */
+#recognitionCarousel {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bs-dark);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#recognitionCarousel .carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+
+#recognitionCarousel iframe {
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
@@ -87,5 +106,13 @@ section {
     .section-title::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    #recognitionCarousel {
+        max-width: 100%;
+    }
+
+    #recognitionCarousel iframe {
+        height: 400px;
     }
 }
