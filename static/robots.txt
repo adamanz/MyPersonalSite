@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adamanzuoni.repl.co/sitemap.xml
