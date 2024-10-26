@@ -3,10 +3,9 @@ const themeToggleBtn = document.getElementById('theme-toggle');
 const themeIcon = themeToggleBtn.querySelector('i');
 const html = document.documentElement;
 
-// Check for saved theme preference
-const savedTheme = localStorage.getItem('theme') || 'dark';
-html.setAttribute('data-bs-theme', savedTheme);
-updateThemeIcon(savedTheme);
+// Always start with dark theme
+html.setAttribute('data-bs-theme', 'dark');
+updateThemeIcon('dark');
 
 themeToggleBtn.addEventListener('click', () => {
     const currentTheme = html.getAttribute('data-bs-theme');
@@ -33,34 +32,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
-
-// Active navigation highlighting
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href')?.substring(1) === current) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Mobile menu closing after click
-document.querySelector('.navbar-nav').addEventListener('click', () => {
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    if (navbarCollapse.classList.contains('show')) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-        bsCollapse.hide();
-    }
 });

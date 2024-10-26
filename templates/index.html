@@ -13,30 +13,9 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">AA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="btn nav-link ms-auto" id="theme-toggle">
+                <i class="fas fa-moon"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#recognition">Recognition</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn nav-link" id="theme-toggle">
-                            <i class="fas fa-moon"></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
@@ -58,9 +37,11 @@
     <!-- About Section -->
     <section id="about" class="container py-5">
         <h2 class="section-title">About Me</h2>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-4">
-                <img src="{{ url_for('static', filename='img/avatar.svg') }}" alt="Profile" class="img-fluid rounded">
+                <div class="profile-image-wrapper">
+                    <img src="{{ url_for('static', filename='img/Riverpoint_Headshots_BNN_371.jpeg') }}" alt="Adam Anzuoni" class="img-fluid rounded profile-image">
+                </div>
             </div>
             <div class="col-md-8">
                 <p>Innovative technology leader with a track record of driving business success through strategic planning, team building, and cutting-edge technology implementations. Adept at forging partnerships with industry leaders to access new technologies and streamline processes, resulting in significant productivity gains and competitive advantages. Proven ability to create scalable solutions, manage change effectively, and deliver measurable results that align with organizational goals.</p>
@@ -68,6 +49,7 @@
         </div>
     </section>
 
+    <!-- Rest of the sections remain unchanged -->
     <!-- Experience Section -->
     <section id="experience" class="container py-5">
         <h2 class="section-title">Experience</h2>
@@ -148,7 +130,7 @@
         </div>
     </section>
 
-    <!-- Public Recognition Section -->
+    <!-- Recognition Section -->
     <section id="recognition" class="container py-5">
         <h2 class="section-title">Public Recognition</h2>
         <div id="recognitionCarousel" class="carousel slide" data-bs-ride="carousel">
