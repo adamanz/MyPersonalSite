@@ -1,0 +1,44 @@
+Adam Anzuoni
+
+
+Profile
+Innovative technology leader with a track record of driving business success through strategic planning, team building, and cutting-edge technology implementations. Adept at forging partnerships with industry leaders to access new technologies and streamline processes, resulting in significant productivity gains and competitive advantages. Proven ability to create scalable solutions, manage change effectively, and deliver measurable results that align with organizational goals.
+
+Employment History
+Chief Technology Officer at Fundwell/Riverpoint Capital  , New York, NY
+April 2023 — Present
+Re-architected the technology stack to enhance security, automation, and accountability within the Sales Team, resulting in a 110% increase in average monthly funding.
+Implemented the first production Box AI API use case in collaboration with Box, saving the underwriting team 30 hours per week.
+Partnered with Google to gain early access to Gemini models, developing an in-house OCR tool.
+Created an SMS marketing automation platform, originating $20 million in funding.
+Chief Technology Advisor at  Toys for Hospitalized Children, New York, NY
+September 2023 — April 2024
+Advised board on leveraging technology to help scale from a single hospitable to 8. 
+Architectured the "Happy Shop" allowing hospitalized children or their parents to select the toy they wanted to be delivered. 
+Technical Infrastructure Lead at Blockchain.com, New York, NY
+December 2021 — January 2023
+Revamped the onboarding process with Salesforce Flow, automating 90% of tasks across compliance, risk, finance, and sales teams, onboarding over 2,000 clients in under a year.
+Cultivated a "If it’s not on Salesforce, it doesn’t exist" culture through targeted training, user guides, workshops, and collaboration with senior leadership.
+Reduced team SaaS spending by $100,000 by consolidating six legacy tools into Salesforce.
+Managing, Senior AI Data Analyst at Neuraflash, New York, NY
+December 2018 — December 2021
+Achieved over 30% case deflection for 18 Salesforce customers by deploying Salesforce Einstein for common issues such as password resets, order status updates, and profile changes.
+Built and managed a team of four data analysts to identify and develop high-ROI use cases for Einstein Bots.
+Developed and launched the Service Cloud Voice Reporting Package, generating $195,000 in revenue within six months.
+Automated the deployment of Service Cloud Voice and Einstein Chatbot Reporting Packages to client Salesforce environments.
+Summer Analyst at Blackstone
+May 2018 — August 2018
+Partnered with high net-worth business units to develop and document success criteria, use cases, and requirements for upgrading SaaS infrastructure.
+Led a team of developers and designers in executing upgrades using Agile methodologies for efficient task and project management.
+
+Education
+Management Information Systems, Rochester Institute of Technology
+September 2014 — December 2019
+
+
+
+Details
+New York, NY, United States, 4015758192
+adamanzzz@gmail.com
+
+
