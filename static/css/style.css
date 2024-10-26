@@ -1,0 +1,91 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    padding-top: 60px;
+}
+
+/* Navigation */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(var(--bs-dark-rgb), 0.9);
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--bs-info);
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 100px 0;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--bs-secondary);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--bs-info);
+}
+
+/* Experience Timeline */
+.experience-item {
+    padding: 20px;
+    border-left: 3px solid var(--bs-secondary);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--bs-info);
+}
+
+/* Projects */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

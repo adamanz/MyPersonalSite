@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Website</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">JD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero container min-vh-100 d-flex align-items-center">
+        <div class="content">
+            <h1 class="display-4">John Doe</h1>
+            <p class="lead">Software Engineer & Tech Enthusiast</p>
+            <div class="social-links">
+                <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/avatar.svg') }}" alt="Profile" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <p>I'm a passionate software engineer with expertise in building modern web applications. I love creating elegant solutions to complex problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="experience-item">
+                <h4>Senior Software Engineer</h4>
+                <p class="company">Tech Corp Inc.</p>
+                <p class="period">2020 - Present</p>
+                <p>Led development of multiple full-stack applications using modern technologies.</p>
+            </div>
+            <!-- Add more experience items -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Project One</h5>
+                        <p class="card-text">A modern web application built with React and Node.js</p>
+                        <a href="#" class="btn btn-outline-secondary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter container py-5">
+        <h2 class="section-title">Subscribe to My Newsletter</h2>
+        <iframe src="https://YOURSUBSTACK.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:transparent;" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container py-4">
+        <div class="text-center">
+            <p>© 2023 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
