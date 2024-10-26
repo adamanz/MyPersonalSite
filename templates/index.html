@@ -23,7 +23,7 @@
     <section id="home" class="hero container min-vh-100 d-flex align-items-center">
         <div class="content">
             <h1 class="display-4">Adam Anzuoni</h1>
-            <p class="lead">Chief Technology Officer</p>
+            <p class="lead">Shaping a Better World with Technology and Optimism</p>
             <div class="social-links">
                 <a href="https://github.com/adamanz" target="_blank" rel="noopener" class="me-3"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/adamanz" target="_blank" rel="noopener" class="me-3"><i class="fab fa-linkedin"></i></a>
@@ -40,7 +40,12 @@
         <div class="row align-items-center">
             <div class="col-md-4">
                 <div class="profile-image-wrapper">
-                    <img src="{{ url_for('static', filename='img/Riverpoint_Headshots_BNN_371.jpeg') }}" alt="Adam Anzuoni" class="img-fluid rounded profile-image">
+                    <img 
+                        src="{{ url_for('static', filename='img/Riverpoint_Headshots_BNN_371.jpeg') }}" 
+                        alt="Adam Anzuoni"
+                        class="profile-image"
+                        onerror="this.classList.add('profile-image-error')"
+                    >
                 </div>
             </div>
             <div class="col-md-8">
@@ -49,7 +54,6 @@
         </div>
     </section>
 
-    <!-- Rest of the sections remain unchanged -->
     <!-- Experience Section -->
     <section id="experience" class="container py-5">
         <h2 class="section-title">Experience</h2>

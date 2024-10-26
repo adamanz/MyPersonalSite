@@ -53,20 +53,53 @@ section {
 /* Profile Image */
 .profile-image-wrapper {
     position: relative;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .profile-image:hover {
     transform: scale(1.02);
+}
+
+/* Fallback for missing image */
+.profile-image-wrapper::before {
+    content: 'AA';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-secondary);
+    color: var(--bs-light);
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.profile-image:not([src]), 
+.profile-image[src=""], 
+.profile-image-error {
+    display: none;
+}
+
+.profile-image:not([src]) + .profile-image-wrapper::before,
+.profile-image[src=""] + .profile-image-wrapper::before,
+.profile-image-error + .profile-image-wrapper::before {
+    opacity: 1;
 }
 
 /* Experience Timeline */
@@ -128,7 +161,7 @@ section {
     }
 
     .profile-image-wrapper {
-        max-width: 300px;
+        max-width: 250px;
         margin-bottom: 2rem;
     }
 
