@@ -15,7 +15,6 @@
     <meta name="geo.position" content="40.7128;-74.0060">
     <meta name="ICBM" content="40.7128, -74.0060">
     <link rel="canonical" href="{{ request.url_root }}">
-
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Adam Anzuoni - Innovative Technology Leader & CTO | Personal Portfolio">
     <meta property="og:description" content="Adam Anzuoni - CTO at Riverpoint Capital. Expert in AI implementation, Box AI API integration, and strategic technology leadership. Former Technical Lead at Blockchain.com and Senior AI Analyst at Neuraflash.">
@@ -31,7 +30,6 @@
     <meta property="article:published_time" content="2024-11-03">
     <meta property="article:modified_time" content="2024-11-03">
     <meta property="og:locale" content="en_US">
-
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@adamanzzz">
@@ -40,12 +38,10 @@
     <meta name="twitter:description" content="Adam Anzuoni - CTO at Riverpoint Capital. Expert in AI implementation, Box AI API integration, and strategic technology leadership.">
     <meta name="twitter:image" content="{{ url_for('static', filename='img/Riverpoint_Headshots_BNN_371.jpeg', _external=True) }}">
     <meta name="twitter:image:alt" content="Adam Anzuoni - Chief Technology Officer at Riverpoint Capital">
-
     <title>Adam Anzuoni - Innovative Technology Leader & CTO | Personal Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
@@ -128,7 +124,6 @@
         ]
     }
     </script>
-
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
@@ -142,7 +137,6 @@
         }]
     }
     </script>
-
     <!-- WebSite Schema -->
     <script type="application/ld+json">
     {
@@ -168,7 +162,6 @@
             </button>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero container min-vh-100 d-flex align-items-center">
         <div class="content">
@@ -183,7 +176,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="container py-5">
         <h2 class="section-title">About Adam Anzuoni</h2>
@@ -203,7 +195,6 @@
             </div>
         </div>
     </section>
-
     <!-- Experience Section -->
     <section id="experience" class="container py-5">
         <h2 class="section-title">Adam Anzuoni's Professional Experience</h2>
@@ -240,7 +231,6 @@
             </div>
         </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="container py-5">
         <h2 class="section-title">Notable Projects by Adam Anzuoni</h2>
@@ -283,30 +273,39 @@
             </div>
         </div>
     </section>
-
     <!-- Recognition Section -->
     <section id="recognition" class="container py-5">
         <h2 class="section-title">Public Recognition of Adam Anzuoni</h2>
-        <div id="recognitionCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#recognitionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#recognitionCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#recognitionCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="recognition-gallery">
+            <div class="recognition-card">
+                <iframe 
+                    title="Adam Anzuoni LinkedIn Post about Box AI API Implementation" 
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:share:7060175291968561154" 
+                    frameborder="0" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe title="Adam Anzuoni LinkedIn Post about Box AI API Implementation" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7060175291968561154" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe title="Adam Anzuoni LinkedIn Post about Technology Leadership" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7196140608275574784" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe title="Adam Anzuoni LinkedIn Post about Innovation" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7186432386912415745" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div class="recognition-card">
+                <iframe 
+                    title="Adam Anzuoni LinkedIn Post about Technology Leadership" 
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7196140608275574784" 
+                    frameborder="0" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="recognition-card">
+                <iframe 
+                    title="Adam Anzuoni LinkedIn Post about Innovation" 
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7186432386912415745" 
+                    frameborder="0" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
-
     <!-- Bootstrap and custom scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
