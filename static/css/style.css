@@ -133,9 +133,10 @@ section {
 /* Recognition Gallery */
 .recognition-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .recognition-card {
@@ -143,7 +144,8 @@ section {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 600px;
+    aspect-ratio: 16/9;
+    width: 100%;
 }
 
 .recognition-card:hover {
@@ -160,6 +162,16 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .recognition-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .recognition-card {
+        aspect-ratio: 16/9;
+    }
+}
+
     .hero {
         text-align: center;
     }
@@ -172,13 +184,5 @@ section {
     .profile-image-wrapper {
         max-width: 250px;
         margin-bottom: 2rem;
-    }
-
-    .recognition-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .recognition-card {
-        height: 500px;
     }
 }
